@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.invoice_request import InvoiceRequest  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.invoice_request import InvoiceRequest  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestInvoiceRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInvoiceRequest(unittest.TestCase):
     def testInvoiceRequest(self):
         """Test InvoiceRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.invoice_request.InvoiceRequest()  # noqa: E501
+        # model = swagger_client.models.invoice_request.InvoiceRequest()  # noqa: E501
         pass
 
 

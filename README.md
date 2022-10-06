@@ -22,9 +22,8 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
-
 ```python
-import client 
+import swagger_client 
 ```
 
 ### Setuptools
@@ -37,9 +36,8 @@ python setup.py install --user
 (or `sudo python setup.py install` to install the package for all users)
 
 Then import the package:
-
 ```python
-import client
+import swagger_client
 ```
 
 ## Getting Started
@@ -49,16 +47,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basicAuth
-configuration = client.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = client.AuthApi(client.ApiClient(configuration))
+api_instance = swagger_client.AuthApi(swagger_client.ApiClient(configuration))
 
 try:
     # This endpoint is used to get a token for authentication.
@@ -91,11 +89,10 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**unapproved_orders**](docs/OrdersApi.md#unapproved_orders) | **GET** /v1/orders/unapproved | It is used to get the list of unapproved orders by shop.
 *OrdersApi* | [**verify_order**](docs/OrdersApi.md#verify_order) | **POST** /v1/orders/{orderId}/shop/{shopId}/verify | This method is used to approve the incoming order by the shop
 *ProductsApi* | [**get_batch_request_result**](docs/ProductsApi.md#get_batch_request_result) | **GET** /v1/products/price-and-quantity/batch-requests/{batchRequestId} | Get products update result with using batchRequestId
+*ProductsApi* | [**get_chain_products**](docs/ProductsApi.md#get_chain_products) | **GET** /v1/products | Product integration allows you to list information such as stock, price, brand of seller&#x27;s listings.
 *ProductsApi* | [**get_chain_productsby_chain_id**](docs/ProductsApi.md#get_chain_productsby_chain_id) | **GET** /v1/chains/{chainId}/products | This method is used to get products by chain id.
 *ProductsApi* | [**get_shop_productsby_shop_id**](docs/ProductsApi.md#get_shop_productsby_shop_id) | **GET** /v1/shops/{shopId}/products | This method is used to get products by shop id.
 *ProductsApi* | [**update_price_and_quantity**](docs/ProductsApi.md#update_price_and_quantity) | **PUT** /v1/products/price-and-quantity | Update price and quantity of products
-*ProductsApi* | [**update_price_and_quantity_by_vendor_id**](docs/ProductsApi.md#update_price_and_quantity_by_vendor_id) | **PUT** /v1/products/price-and-quantity/vendor | Update price and quantity of products by vendorId
-*ShopsApi* | [**get_chain_shops**](docs/ShopsApi.md#get_chain_shops) | **GET** /v1/chains/{chainId}/shops | get chain shops data.
 *ShopsApi* | [**get_shop**](docs/ShopsApi.md#get_shop) | **GET** /v1/shops/{shopId} | It is used to get the shop informations.
 *ShopsApi* | [**update_shop_courier_working_status**](docs/ShopsApi.md#update_shop_courier_working_status) | **PUT** /v1/shops/{shopId}/couriers/working-status | It is used to put the shops couiers working status.
 *ShopsApi* | [**update_shop_working_hours**](docs/ShopsApi.md#update_shop_working_hours) | **PUT** /v1/shops/{shopId}/working-hours | It is used to put the shops working hours.
@@ -106,7 +103,6 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [ActiveOrderListResponse](docs/ActiveOrderListResponse.md)
- - [AlternativeProducts](docs/AlternativeProducts.md)
  - [ApiResponseActiveOrder](docs/ApiResponseActiveOrder.md)
  - [ApiResponseAuthenticationResponse](docs/ApiResponseAuthenticationResponse.md)
  - [ApiResponseGetShopResponse](docs/ApiResponseGetShopResponse.md)
@@ -118,16 +114,16 @@ Class | Method | HTTP request | Description
  - [ApiResponsePageableResponseShopProductsResponse](docs/ApiResponsePageableResponseShopProductsResponse.md)
  - [ApiResponsePageableResponseShopProductsResponseData](docs/ApiResponsePageableResponseShopProductsResponseData.md)
  - [ApiResponsePriceAndQuantityBatchResponse](docs/ApiResponsePriceAndQuantityBatchResponse.md)
+ - [ApiResponsePriceAndQuantityBatchResponseWrapper](docs/ApiResponsePriceAndQuantityBatchResponseWrapper.md)
  - [ApiResponseProductBatchTicketResponse](docs/ApiResponseProductBatchTicketResponse.md)
  - [ApiResponseShopCouriersWorkingStatusResponse](docs/ApiResponseShopCouriersWorkingStatusResponse.md)
  - [ApiResponseShopWorkingHoursResponse](docs/ApiResponseShopWorkingHoursResponse.md)
  - [ApiResponseVoid](docs/ApiResponseVoid.md)
  - [ArtisanOrderResponse](docs/ArtisanOrderResponse.md)
+ - [ArtisanOrderResponseWrapper](docs/ArtisanOrderResponseWrapper.md)
  - [AuthenticationResponse](docs/AuthenticationResponse.md)
- - [BagResponse](docs/BagResponse.md)
  - [CancelOptionResponse](docs/CancelOptionResponse.md)
  - [CancelOrderRequest](docs/CancelOrderRequest.md)
- - [ChainShopResponse](docs/ChainShopResponse.md)
  - [CustomerResponse](docs/CustomerResponse.md)
  - [FieldValidation](docs/FieldValidation.md)
  - [FilterLineOrderResponse](docs/FilterLineOrderResponse.md)
@@ -146,28 +142,23 @@ Class | Method | HTTP request | Description
  - [OperationResult](docs/OperationResult.md)
  - [OrderDtoResponse](docs/OrderDtoResponse.md)
  - [OrderResponse](docs/OrderResponse.md)
- - [PackagingInfoResponse](docs/PackagingInfoResponse.md)
- - [PackagingUpdate](docs/PackagingUpdate.md)
  - [PageSizeInvalidError](docs/PageSizeInvalidError.md)
  - [PageSizeInvalidErrorMeta](docs/PageSizeInvalidErrorMeta.md)
  - [PageableResponseSupplierProductResponse](docs/PageableResponseSupplierProductResponse.md)
  - [PasswordResetRequest](docs/PasswordResetRequest.md)
  - [PaymentMethodTextResponse](docs/PaymentMethodTextResponse.md)
- - [PrepareOrderRequest](docs/PrepareOrderRequest.md)
+ - [PreparedOrderRequest](docs/PreparedOrderRequest.md)
  - [PriceAndQuantityBatchProductResponse](docs/PriceAndQuantityBatchProductResponse.md)
  - [ProductBatchRequest](docs/ProductBatchRequest.md)
  - [ProductBatchTicketResponse](docs/ProductBatchTicketResponse.md)
- - [ProductBatchVendorRequest](docs/ProductBatchVendorRequest.md)
  - [ProductRequest](docs/ProductRequest.md)
  - [ProductResponse](docs/ProductResponse.md)
- - [ProductVendorRequest](docs/ProductVendorRequest.md)
- - [SelectedAmount](docs/SelectedAmount.md)
  - [ShopCouriersWorkingStatusResponse](docs/ShopCouriersWorkingStatusResponse.md)
  - [ShopProductsResponse](docs/ShopProductsResponse.md)
- - [ShopResponse](docs/ShopResponse.md)
  - [ShopWorkingHoursResponse](docs/ShopWorkingHoursResponse.md)
  - [SupplierDataChainResponse](docs/SupplierDataChainResponse.md)
  - [SupplierDataResponse](docs/SupplierDataResponse.md)
+ - [SupplierDataResponseWrapper](docs/SupplierDataResponseWrapper.md)
  - [SupplierDataShopResponse](docs/SupplierDataShopResponse.md)
  - [SupplierProductResponse](docs/SupplierProductResponse.md)
  - [UpdateShopCouriersStatusRequest](docs/UpdateShopCouriersStatusRequest.md)

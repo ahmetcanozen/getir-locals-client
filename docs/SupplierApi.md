@@ -13,16 +13,16 @@ Method | HTTP request | Description
 get supplier data.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.SupplierApi(client.ApiClient(configuration))
+api_instance = swagger_client.SupplierApi(swagger_client.ApiClient(configuration))
 
 try:
     # get supplier data.
@@ -58,17 +58,16 @@ Shops can reset the password they use via this endpoint and create a new passwor
 The password must comply with the following rules. <br> - The new password must be at least 8 characters. - The password must contain one digit. - The password must contain one lowercase letter. - The password must contain one uppercase letter. - The password must contain one special character. - The password must contain no whitespace. 
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = client.SupplierApi()
-body = client.PasswordResetRequest()  # PasswordResetRequest |  (optional)
+api_instance = swagger_client.SupplierApi()
+body = swagger_client.PasswordResetRequest() # PasswordResetRequest |  (optional)
 
 try:
     # Shops can reset the password they use via this endpoint and create a new password.

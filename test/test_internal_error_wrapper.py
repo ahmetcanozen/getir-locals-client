@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.internal_error_wrapper import InternalErrorWrapper  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.internal_error_wrapper import InternalErrorWrapper  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestInternalErrorWrapper(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInternalErrorWrapper(unittest.TestCase):
     def testInternalErrorWrapper(self):
         """Test InternalErrorWrapper"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.internal_error_wrapper.InternalErrorWrapper()  # noqa: E501
+        # model = swagger_client.models.internal_error_wrapper.InternalErrorWrapper()  # noqa: E501
         pass
 
 

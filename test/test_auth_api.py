@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.api.auth_api import AuthApi  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.api.auth_api import AuthApi  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestAuthApi(unittest.TestCase):

@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
 **email** | **str** |  | [optional] 
 **client_masked_phone_number** | **str** |  | [optional] 

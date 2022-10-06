@@ -25,17 +25,17 @@ Method | HTTP request | Description
 This method is used to select cancel reasons according to delivery option.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
 
 try:
     # This method is used to select cancel reasons according to delivery option.
@@ -72,19 +72,19 @@ Name | Type | Description  | Notes
 This method is used to cancel  the order.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-body = client.CancelOrderRequest()  # CancelOrderRequest | 
-order_id = 'order_id_example'  # str | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+body = swagger_client.CancelOrderRequest() # CancelOrderRequest | 
+order_id = 'order_id_example' # str | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # This method is used to cancel  the order.
@@ -123,18 +123,18 @@ Name | Type | Description  | Notes
 It is used to get the list of cancelled orders by shop.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-shop_id = 'shop_id_example'  # str | 
-_date = '2013-10-20'  # date | Date format pattern is \"yyyy-MM-dd\". (optional)
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+shop_id = 'shop_id_example' # str | 
+_date = '2013-10-20' # date |  (optional)
 
 try:
     # It is used to get the list of cancelled orders by shop.
@@ -149,7 +149,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shop_id** | **str**|  | 
- **_date** | **date**| Date format pattern is \&quot;yyyy-MM-dd\&quot;. | [optional] 
+ **_date** | **date**|  | [optional] 
 
 ### Return type
 
@@ -172,17 +172,17 @@ Name | Type | Description  | Notes
 It is used to get the list of unapproved orders by chain.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-chain_id = 'chain_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+chain_id = 'chain_id_example' # str | 
 
 try:
     # It is used to get the list of unapproved orders by chain.
@@ -219,18 +219,18 @@ Name | Type | Description  | Notes
 This method is used for the delivery of the prepared order.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # This method is used for the delivery of the prepared order.
@@ -268,17 +268,17 @@ Name | Type | Description  | Notes
 It is used to get the list of active orders by shop.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to get the list of active orders by shop.
@@ -310,22 +310,22 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_order**
-> ArtisanOrderResponse get_order(order_id)
+> ArtisanOrderResponseWrapper get_order(order_id)
 
 This method is used to get details of an order
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
 
 try:
     # This method is used to get details of an order
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ArtisanOrderResponse**](ArtisanOrderResponse.md)
+[**ArtisanOrderResponseWrapper**](ArtisanOrderResponseWrapper.md)
 
 ### Authorization
 
@@ -362,21 +362,21 @@ Name | Type | Description  | Notes
 It is used to get the list of orders by shopIds,startDate and endDate.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-start_date = '2013-10-20'  # date | Date format pattern is \"yyyy-MM-dd\".
-end_date = '2013-10-20'  # date | Date format pattern is \"yyyy-MM-dd\".
-shop_id = 'shop_id_example'  # str | 
-page = 1.2  # float | 
-page_size = 1.2  # float | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+start_date = 'start_date_example' # str | Date format pattern is \"yyyy-MM-dd\".
+end_date = 'end_date_example' # str | Date format pattern is \"yyyy-MM-dd\".
+shop_id = 'shop_id_example' # str | 
+page = 1.2 # float | 
+page_size = 1.2 # float | 
 
 try:
     # It is used to get the list of orders by shopIds,startDate and endDate.
@@ -390,8 +390,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **start_date** | **date**| Date format pattern is \&quot;yyyy-MM-dd\&quot;. | 
- **end_date** | **date**| Date format pattern is \&quot;yyyy-MM-dd\&quot;. | 
+ **start_date** | **str**| Date format pattern is \&quot;yyyy-MM-dd\&quot;. | 
+ **end_date** | **str**| Date format pattern is \&quot;yyyy-MM-dd\&quot;. | 
  **shop_id** | **str**|  | 
  **page** | **float**|  | 
  **page_size** | **float**|  | 
@@ -417,21 +417,20 @@ Name | Type | Description  | Notes
 It is used to get the list of delivered orders by shopId,startDate and endDate.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-start_date = '2013-10-20'  # date | Date format pattern is \"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\".
-end_date = '2013-10-20'  # date | Date format pattern is \"yyyy-MM-dd'T'HH:mm:ss.SSSXXX \".
-shop_id = 'shop_id_example'  # str | 
-page = 1.2  # float | 
-page_size = 1.2  # float | 
+api_instance = swagger_client.OrdersApi()
+start_date = '2013-10-20' # date | Date format pattern is \"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\".
+end_date = '2013-10-20' # date | Date format pattern is \"yyyy-MM-dd'T'HH:mm:ss.SSSXXX \".
+shop_id = 'shop_id_example' # str | 
+page = 1.2 # float | 
+page_size = 1.2 # float | 
 
 try:
     # It is used to get the list of delivered orders by shopId,startDate and endDate.
@@ -457,7 +456,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -472,18 +471,18 @@ Name | Type | Description  | Notes
 This method is used for the delivery of the prepared order to the courier.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # This method is used for the delivery of the prepared order to the courier.
@@ -521,19 +520,19 @@ Name | Type | Description  | Notes
 This method is used to change the prepared order to the prepared status
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
-shop_id = 'shop_id_example'  # str | 
-body = client.PrepareOrderRequest()  # PrepareOrderRequest |  (optional)
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
+shop_id = 'shop_id_example' # str | 
+body = swagger_client.PreparedOrderRequest() # PreparedOrderRequest |  (optional)
 
 try:
     # This method is used to change the prepared order to the prepared status
@@ -549,7 +548,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **str**|  | 
  **shop_id** | **str**|  | 
- **body** | [**PrepareOrderRequest**](PrepareOrderRequest.md)|  | [optional] 
+ **body** | [**PreparedOrderRequest**](PreparedOrderRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -572,18 +571,18 @@ Name | Type | Description  | Notes
 This method is used to send the order's invoice to the client
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
-body = client.InvoiceRequest()  # InvoiceRequest |  (optional)
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
+body = swagger_client.InvoiceRequest() # InvoiceRequest |  (optional)
 
 try:
     # This method is used to send the order's invoice to the client
@@ -621,17 +620,17 @@ Name | Type | Description  | Notes
 It is used to get the list of unapproved orders by shop.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to get the list of unapproved orders by shop.
@@ -668,18 +667,18 @@ Name | Type | Description  | Notes
 This method is used to approve the incoming order by the shop
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.OrdersApi(client.ApiClient(configuration))
-order_id = 'order_id_example'  # str | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
+order_id = 'order_id_example' # str | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # This method is used to approve the incoming order by the shop

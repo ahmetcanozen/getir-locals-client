@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.api.products_api import ProductsApi  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.api.products_api import ProductsApi  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestProductsApi(unittest.TestCase):
@@ -32,6 +32,13 @@ class TestProductsApi(unittest.TestCase):
         """Test case for get_batch_request_result
 
         Get products update result with using batchRequestId  # noqa: E501
+        """
+        pass
+
+    def test_get_chain_products(self):
+        """Test case for get_chain_products
+
+        Product integration allows you to list information such as stock, price, brand of seller's listings.  # noqa: E501
         """
         pass
 
@@ -53,13 +60,6 @@ class TestProductsApi(unittest.TestCase):
         """Test case for update_price_and_quantity
 
         Update price and quantity of products  # noqa: E501
-        """
-        pass
-
-    def test_update_price_and_quantity_by_vendor_id(self):
-        """Test case for update_price_and_quantity_by_vendor_id
-
-        Update price and quantity of products by vendorId  # noqa: E501
         """
         pass
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.api.shops_api import ShopsApi  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.api.shops_api import ShopsApi  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestShopsApi(unittest.TestCase):
@@ -26,13 +26,6 @@ class TestShopsApi(unittest.TestCase):
         self.api = ShopsApi()  # noqa: E501
 
     def tearDown(self):
-        pass
-
-    def test_get_chain_shops(self):
-        """Test case for get_chain_shops
-
-        get chain shops data.  # noqa: E501
-        """
         pass
 
     def test_get_shop(self):

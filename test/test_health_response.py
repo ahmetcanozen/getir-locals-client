@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.health_response import HealthResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.health_response import HealthResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestHealthResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHealthResponse(unittest.TestCase):
     def testHealthResponse(self):
         """Test HealthResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.health_response.HealthResponse()  # noqa: E501
+        # model = swagger_client.models.health_response.HealthResponse()  # noqa: E501
         pass
 
 

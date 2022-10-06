@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.api_response_pageable_response_shop_products_response_data import ApiResponsePageableResponseShopProductsResponseData  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.api_response_pageable_response_shop_products_response_data import ApiResponsePageableResponseShopProductsResponseData  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestApiResponsePageableResponseShopProductsResponseData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApiResponsePageableResponseShopProductsResponseData(unittest.TestCase)
     def testApiResponsePageableResponseShopProductsResponseData(self):
         """Test ApiResponsePageableResponseShopProductsResponseData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.api_response_pageable_response_shop_products_response_data.ApiResponsePageableResponseShopProductsResponseData()  # noqa: E501
+        # model = swagger_client.models.api_response_pageable_response_shop_products_response_data.ApiResponsePageableResponseShopProductsResponseData()  # noqa: E501
         pass
 
 

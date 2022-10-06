@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.page_size_invalid_error import PageSizeInvalidError  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.page_size_invalid_error import PageSizeInvalidError  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestPageSizeInvalidError(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPageSizeInvalidError(unittest.TestCase):
     def testPageSizeInvalidError(self):
         """Test PageSizeInvalidError"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.page_size_invalid_error.PageSizeInvalidError()  # noqa: E501
+        # model = swagger_client.models.page_size_invalid_error.PageSizeInvalidError()  # noqa: E501
         pass
 
 

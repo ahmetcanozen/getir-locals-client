@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | order product id | [optional] 
+**id** | **str** |  | [optional] 
 **new_price** | **float** |  | [optional] 
 **new_count** | **int** |  | [optional] 
 **new_total_weight** | **int** |  | [optional] 

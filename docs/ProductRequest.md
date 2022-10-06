@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **getir_id** | **str** |  | 
-**quantity** | **int** |  | 
-**price** | **float** |  | 
+**quantity** | **int** |  | [optional] 
+**price** | **float** |  | [optional] 
 **old_price** | **float** |  | [optional] 
 **shop_id** | **str** |  | 
 

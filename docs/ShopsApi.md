@@ -4,58 +4,10 @@ All URIs are relative to *https://locals-integration-api-gateway.artisandev.geti
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_chain_shops**](ShopsApi.md#get_chain_shops) | **GET** /v1/chains/{chainId}/shops | get chain shops data.
 [**get_shop**](ShopsApi.md#get_shop) | **GET** /v1/shops/{shopId} | It is used to get the shop informations.
 [**update_shop_courier_working_status**](ShopsApi.md#update_shop_courier_working_status) | **PUT** /v1/shops/{shopId}/couriers/working-status | It is used to put the shops couiers working status.
 [**update_shop_working_hours**](ShopsApi.md#update_shop_working_hours) | **PUT** /v1/shops/{shopId}/working-hours | It is used to put the shops working hours.
 [**update_shop_working_status**](ShopsApi.md#update_shop_working_status) | **PUT** /v1/shops/{shopId}/working-status | It is used to put the shops working status.
-
-# **get_chain_shops**
-> ChainShopResponse get_chain_shops(chain_id)
-
-get chain shops data.
-
-### Example
-
-```python
-from __future__ import print_function
-import time
-import client
-from client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = client.ShopsApi(client.ApiClient(configuration))
-chain_id = 'chain_id_example'  # str | 
-
-try:
-    # get chain shops data.
-    api_response = api_instance.get_chain_shops(chain_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ShopsApi->get_chain_shops: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **chain_id** | **str**|  | 
-
-### Return type
-
-[**ChainShopResponse**](ChainShopResponse.md)
-
-### Authorization
-
-[bearerAuth](../README.md#bearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_shop**
 > ApiResponseGetShopResponse get_shop(shop_id)
@@ -63,17 +15,17 @@ Name | Type | Description  | Notes
 It is used to get the shop informations.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.ShopsApi(client.ApiClient(configuration))
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.ShopsApi(swagger_client.ApiClient(configuration))
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to get the shop informations.
@@ -110,18 +62,18 @@ Name | Type | Description  | Notes
 It is used to put the shops couiers working status.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.ShopsApi(client.ApiClient(configuration))
-body = client.UpdateShopCouriersStatusRequest()  # UpdateShopCouriersStatusRequest | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.ShopsApi(swagger_client.ApiClient(configuration))
+body = swagger_client.UpdateShopCouriersStatusRequest() # UpdateShopCouriersStatusRequest | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to put the shops couiers working status.
@@ -159,18 +111,18 @@ Name | Type | Description  | Notes
 It is used to put the shops working hours.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.ShopsApi(client.ApiClient(configuration))
-body = client.UpdateShopWorkingHoursRequest()  # UpdateShopWorkingHoursRequest | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.ShopsApi(swagger_client.ApiClient(configuration))
+body = swagger_client.UpdateShopWorkingHoursRequest() # UpdateShopWorkingHoursRequest | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to put the shops working hours.
@@ -208,18 +160,18 @@ Name | Type | Description  | Notes
 It is used to put the shops working status.
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
+
 # create an instance of the API class
-api_instance = client.ShopsApi(client.ApiClient(configuration))
-body = client.UpdateShopStatusRequest()  # UpdateShopStatusRequest | 
-shop_id = 'shop_id_example'  # str | 
+api_instance = swagger_client.ShopsApi(swagger_client.ApiClient(configuration))
+body = swagger_client.UpdateShopStatusRequest() # UpdateShopStatusRequest | 
+shop_id = 'shop_id_example' # str | 
 
 try:
     # It is used to put the shops working status.

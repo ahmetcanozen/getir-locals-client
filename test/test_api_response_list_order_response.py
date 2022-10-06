@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.api_response_list_order_response import ApiResponseListOrderResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.api_response_list_order_response import ApiResponseListOrderResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestApiResponseListOrderResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApiResponseListOrderResponse(unittest.TestCase):
     def testApiResponseListOrderResponse(self):
         """Test ApiResponseListOrderResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.api_response_list_order_response.ApiResponseListOrderResponse()  # noqa: E501
+        # model = swagger_client.models.api_response_list_order_response.ApiResponseListOrderResponse()  # noqa: E501
         pass
 
 

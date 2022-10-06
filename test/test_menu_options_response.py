@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.menu_options_response import MenuOptionsResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.menu_options_response import MenuOptionsResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestMenuOptionsResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMenuOptionsResponse(unittest.TestCase):
     def testMenuOptionsResponse(self):
         """Test MenuOptionsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.menu_options_response.MenuOptionsResponse()  # noqa: E501
+        # model = swagger_client.models.menu_options_response.MenuOptionsResponse()  # noqa: E501
         pass
 
 

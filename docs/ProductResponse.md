@@ -12,7 +12,6 @@ Name | Type | Description | Notes
 **total_price** | **float** |  | [optional] 
 **has_barcode** | **bool** |  | [optional] 
 **barcode** | **str** |  | [optional] 
-**barcodes** | **list[str]** |  | [optional] 
 **note** | **str** |  | [optional] 
 **max_possible_price** | **float** |  | [optional] 
 **min_possible_price** | **float** |  | [optional] 
@@ -20,7 +19,6 @@ Name | Type | Description | Notes
 **max_total_weight** | **int** |  | [optional] 
 **min_total_weight** | **int** |  | [optional] 
 **total_weight** | **int** |  | [optional] 
-**final_count** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

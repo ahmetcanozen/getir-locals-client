@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.cancel_option_response import CancelOptionResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.cancel_option_response import CancelOptionResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestCancelOptionResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCancelOptionResponse(unittest.TestCase):
     def testCancelOptionResponse(self):
         """Test CancelOptionResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.cancel_option_response.CancelOptionResponse()  # noqa: E501
+        # model = swagger_client.models.cancel_option_response.CancelOptionResponse()  # noqa: E501
         pass
 
 

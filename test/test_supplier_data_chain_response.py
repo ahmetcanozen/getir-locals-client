@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.supplier_data_chain_response import SupplierDataChainResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.supplier_data_chain_response import SupplierDataChainResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestSupplierDataChainResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSupplierDataChainResponse(unittest.TestCase):
     def testSupplierDataChainResponse(self):
         """Test SupplierDataChainResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.supplier_data_chain_response.SupplierDataChainResponse()  # noqa: E501
+        # model = swagger_client.models.supplier_data_chain_response.SupplierDataChainResponse()  # noqa: E501
         pass
 
 

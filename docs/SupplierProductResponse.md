@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **catalog_category_name** | **str** |  | [optional] 
 **vendor_id** | **str** |  | [optional] 
 **barcodes** | **list[str]** |  | [optional] 
-**vat_rate** | **float** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

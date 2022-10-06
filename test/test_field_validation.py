@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.field_validation import FieldValidation  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.field_validation import FieldValidation  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestFieldValidation(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFieldValidation(unittest.TestCase):
     def testFieldValidation(self):
         """Test FieldValidation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.field_validation.FieldValidation()  # noqa: E501
+        # model = swagger_client.models.field_validation.FieldValidation()  # noqa: E501
         pass
 
 

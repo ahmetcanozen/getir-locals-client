@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.api.orders_api import OrdersApi  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.api.orders_api import OrdersApi  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestOrdersApi(unittest.TestCase):

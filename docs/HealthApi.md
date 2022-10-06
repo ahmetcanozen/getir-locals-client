@@ -12,16 +12,15 @@ Method | HTTP request | Description
 Health Check for Getir Infrastructure
 
 ### Example
-
 ```python
 from __future__ import print_function
 import time
-import client
-from client.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = client.HealthApi()
+api_instance = swagger_client.HealthApi()
 
 try:
     # Health Check for Getir Infrastructure

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import client
-from client.models.payment_method_text_response import PaymentMethodTextResponse  # noqa: E501
-from client.rest import ApiException
+import swagger_client
+from swagger_client.models.payment_method_text_response import PaymentMethodTextResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestPaymentMethodTextResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPaymentMethodTextResponse(unittest.TestCase):
     def testPaymentMethodTextResponse(self):
         """Test PaymentMethodTextResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = client.models.payment_method_text_response.PaymentMethodTextResponse()  # noqa: E501
+        # model = swagger_client.models.payment_method_text_response.PaymentMethodTextResponse()  # noqa: E501
         pass
 
 
